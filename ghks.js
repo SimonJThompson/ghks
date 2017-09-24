@@ -160,7 +160,7 @@ ghks.prototype.init = function() {
 								'content': '{}',
 							}
 						},
-						'public': false,
+						public: false,
 						description: that.config.name
 					} ).then( function(gist) {
 
