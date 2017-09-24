@@ -1,0 +1,22 @@
+{
+  "name": "ghks",
+  "version": "1.0.0",
+  "description": "Key/value store, using GitHub gists for persistent storage.",
+  "main": "ghks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonJThompson/ghks.git"
+  },
+  "author": "Simon Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonJThompson/ghks/issues"
+  },
+  "homepage": "https://github.com/SimonJThompson/ghks#readme",
+  "dependencies": {
+    "github": "^11.0.0"
+  }
+}
