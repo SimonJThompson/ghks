@@ -126,8 +126,6 @@ module.exports = class ghks {
 	 * @return {Promise}
 	 */
 	push() {
-		console.log( 'push' );
-
 		return new Promise( ( resolve, reject ) => {
 
 			if( this.remoteId ) {
