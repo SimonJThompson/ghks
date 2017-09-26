@@ -9,13 +9,13 @@ const ghks = require( './ghks' );
 
 // Create new cache.
 let cache = new ghks( {
-  name: 'ghdb_example',
-  token: '{YOUR_GITHUB_TOKEN}'
+	name: 'ghdb_example',
+	token: '{YOUR_GITHUB_TOKEN}'
 } );
 
 cache.init().then( function() {
-  cache.set( 'Fruit', 'Apple' );
-  cache.set( 'Vegetable', 'Carrot' );
+	cache.set( 'Fruit', 'Apple' );
+	cache.set( 'Vegetable', 'Carrot' );
 } ).catch( function( error ) { console.error( 'Failed to init cache:', error ); } );
 ```
 

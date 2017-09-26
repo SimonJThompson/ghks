@@ -16,7 +16,7 @@ module.exports = class ghks {
 		let client = new github();
 		client.authenticate( {
 			type: 'token',
-			token: config.token
+			token: config.token.trim()
 		} );
 
 		// Set up variables.
@@ -83,7 +83,7 @@ module.exports = class ghks {
 					reject( false );
 				}
 			} ).catch( error => {
-				reject( false );
+				reject( error );
 			} );
 		} );
 	}
@@ -138,11 +138,7 @@ module.exports = class ghks {
 				// Write the cache to GitHub.
 				this.client.gists.edit( {
 					id: this.remoteId,
-					files: {
-						'cache.json': {
-								content: encodedCache
-							}
-					}
+					files: {'cache.json': {content: encodedCache}}
 				} ).then( function() {
 
 					resolve( true );
