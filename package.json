@@ -1,6 +1,6 @@
 {
   "name": "ghks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Key/value store, using GitHub gists for persistent storage.",
   "main": "ghks.js",
   "scripts": {
