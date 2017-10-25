@@ -50,7 +50,6 @@ module.exports = class ghks {
 				if (
 					gists
 					&& gists.meta.status == '200 OK'
-					&& gists.data && gists.data.length > 0
 				) {
 
 					// Loop over all gists, looking for one which matches.
